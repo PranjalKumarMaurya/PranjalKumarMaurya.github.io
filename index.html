@@ -63,7 +63,14 @@
 
 
     <section class="projects" id="projects">
-        <h1>My Projects</h1>
+        <div class="heading">
+            <h3 id="class">Explore My</h3>
+            <h3 id="class1">Projects</h3>
+        </div>
+        <div class="heading2">
+            <h3 class="layer1">Explore My</h3>
+            <h3 class="layer2">Projects</h3>
+        </div>
         <div class="project-container">
             <div class="project">
                 <div class="project-show"></div>
@@ -124,28 +131,31 @@
     </section>
 
     <section class="skills" id="skills">
-        <div class="skill skill1">
-            <div class="skill-info">
-                <h3>Development</h3> 
-                <p>In building Websites and Java applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale.</p>
+        <h4>This is what I am good at.</h4>
+        <div class="skills-container">
+            <div class="skill skill1">
+                <div class="skill-info">
+                    <h3>Development</h3> 
+                    <p>In building Websites and Java applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale.</p>
+                </div>
+                <div class="skill-img">
+                    <img src="./Svg/icons8-html-5.svg" alt="">
+                    <img src="./Svg/icons8-css3.svg" alt="">
+                    <img src="./Svg/icons8-javascript.svg" alt="">
+                    <img src="./Svg/icons8-react-native.svg" alt="">
+                    <img src="./Svg/icons8-java.svg" alt="">
+                </div>
             </div>
-            <div class="skill-img">
-                <img src="./Svg/icons8-html-5.svg" alt="">
-                <img src="./Svg/icons8-css3.svg" alt="">
-                <img src="./Svg/icons8-javascript.svg" alt="">
-                <img src="./Svg/icons8-react-native.svg" alt="">
-                <img src="./Svg/icons8-java.svg" alt="">
-            </div>
-        </div>
-        <div class="skill skill2">
-            <div class="skill-info">
-                <h3>Design</h3> 
-                <p>I'm probably not the typical designer always positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me.</p>
-            </div>
-            <div class="skill-img">
-                <img src="./Svg/icons8-adobe-dreamweaver.svg" alt="">
-                <img src="./Svg/icons8-figma.svg" alt="">
-                <img src="./Svg/icons8-adobe-indesign.svg" alt="">
+            <div class="skill skill2">
+                <div class="skill-info">
+                    <h3>Design</h3> 
+                    <p>I'm probably not the typical designer always positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me.</p>
+                </div>
+                <div class="skill-img">
+                    <img src="./Svg/icons8-adobe-dreamweaver.svg" alt="">
+                    <img src="./Svg/icons8-figma.svg" alt="">
+                    <img src="./Svg/icons8-adobe-indesign.svg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -191,6 +201,19 @@
             <p>2023</p>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script type="text/javascript">
+        $(document).on('scroll', function() {
+            $('#class').css("right", Math.max(1000 - 0.35*window.scrollY)
+            + "px");
+        })
+        $(document).on('scroll', function() {
+            $('#class1').css("left", Math.max(1000 - 0.35*window.scrollY)
+             + "px");
+        })
+    </script>
 
 </body>
 </html>

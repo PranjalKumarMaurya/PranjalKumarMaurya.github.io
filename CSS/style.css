@@ -241,11 +241,53 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
+    gap: 15rem;
 }
-.projects h1 {
-    margin-top: 7rem;
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading2 {
+    display: none;
+}
+#class {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    display: inline-block;
     color: whitesmoke;
+    background: -webkit-linear-gradient(138deg, #d3fcff, #258cd3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 50%;
+    margin-top: 2rem;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 10rem;
+    font-weight: 500;
+    right: 1000px;
+}
+#class1 {
+    margin: 0;
+    margin-top: -5rem;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+    color: whitesmoke;
+    background: -webkit-linear-gradient(138deg, #d3fcff, #258cd3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 70%;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    white-space: nowrap;
+    font-size: 10rem;
+    font-weight: 400;
+    left: 1000px;
 }
 .project-container {
     display: grid;
@@ -325,12 +367,21 @@ nav a {
 
 /* ------------------- Skills ------------------- */
 
+.skills h4 {
+    color: whitesmoke;
+    margin-top: 10rem;
+    font-size: 4rem;
+}
 .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10rem;
+}
+.skills-container {
+    display: flex;
+    flex-direction: column;
     gap: 5rem;
-    margin-top: 17rem;
 }
 .skill {
     display: flex;
@@ -364,10 +415,10 @@ nav a {
     width: 2rem;
 }
 .skill1 {
-    margin-left: -30rem;
+    margin-left: -35rem;
 }
 .skill2 {
-    margin-right: -30rem;
+    margin-right: -35rem;
 }
 
 .skill1::before {
@@ -382,6 +433,20 @@ nav a {
     background-repeat: no-repeat;
     background-size: contain;
 }
+.skill1 h3 {
+    background: linear-gradient(-45deg,#ff7777,#fff,#ff7777,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+}
+.skill2 h3 {
+    background: linear-gradient(-45deg,#6bc5f8,#ce97b0,#6bc5f8,#ce97b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+}
 
 
 /* ------------------- Contact ------------------- */
@@ -395,18 +460,19 @@ nav a {
     gap: 2rem;
 }
 .contact-slogan h1 {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     font-weight: 900;
-    background: -webkit-linear-gradient(135.98deg, #FF9897 39.88%, rgba(255, 109, 223, 0.5) 120.79%);
+    background: -webkit-linear-gradient(121.87deg, #F5C6A5 -10.54%, #FF7777 98.97%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .contact-slogan h2 {
-    font-size: 4rem;
-    font-weight: 700;
-    background: -webkit-linear-gradient(135.98deg, #FF9897 39.88%, rgba(255, 109, 223, 0.5) 120.79%);
+    font-size: 3.5rem;
+    font-weight: 400;
+    background: -webkit-linear-gradient(159deg, #4359ff 60%, #f19aca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
 .lets-chat a {
     color: whitesmoke;
