@@ -60,6 +60,42 @@ header h4 {
     color: antiquewhite;
     font-size: 2.5rem;
 }
+.nav2 {
+    display: none;
+}
+.nav-mobile {
+    display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 999;
+        bottom: 1rem;
+        left: 0rem;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background: black;
+        width: 60%;
+        height: 4rem;
+        background: rgba(13, 13, 26,0.6);
+        backdrop-filter: blur(104px);
+        border-radius: 1rem;
+}
+.nav-mobile a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    color: antiquewhite;
+    gap: 0.1rem;
+    transition: 400ms ease;
+}
+.nav-mobile a {
+    font-size: 0.8rem;
+}
+.nav-mobile a i {
+    font-size: 1.9rem;
+}
 nav {
     display: flex;
     align-items: center;
@@ -78,9 +114,7 @@ nav a {
 header a i {
     font-size: 1.7rem;
 }
-header a:nth-child(3) h3{
-    font-size: 2rem;
-}
+
 
 
 
@@ -98,20 +132,6 @@ header a:nth-child(3) h3{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-.wrapper {
-    display: inline-flex;
-    gap: 1rem;
-    margin-bottom: -2rem;
-}
-.static-text {
-    color: whitesmoke;
-    font-size: 2rem;
-    font-weight: 700;
-}
-.static-text span {
-    color: #6bc5f8;
 }
 
 .home-content {
@@ -313,7 +333,7 @@ header a:nth-child(3) h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 .heading {
     display: flex;
@@ -325,6 +345,22 @@ header a:nth-child(3) h3{
 }
 .heading2 {
     display: none;
+    flex-direction: column;
+    margin-top: 7rem;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.heading2 .layer1 {
+    
+    background: -webkit-linear-gradient(138deg, #d3fcff, #258cd3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading2 .layer2 {
+    background: -webkit-linear-gradient(138deg, #d3fcff, #258cd3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #class {
     margin: 0;
@@ -337,7 +373,7 @@ header a:nth-child(3) h3{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     top: 50%;
-    margin-top: 10rem;
+    margin-top: 19rem;
     transform: translateY(-50%);
     white-space: nowrap;
     font-size: 10rem;
@@ -378,7 +414,6 @@ header a:nth-child(3) h3{
     width: 25.5rem;
     height: 30rem;
     border-radius: 0.8rem;
-    
     place-items: center;
     justify-content: space-between;
     padding: 1rem 1rem;
@@ -398,6 +433,7 @@ header a:nth-child(3) h3{
 }  
 .project-show img {
     border-radius: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .project-info {
@@ -512,12 +548,272 @@ footer .end p {
 
 
 @media (width <= 1586px) {
+    header {
+        width: 50%;
+    }
+
+    .quote {
+        margin: 12rem 5rem 10rem 12rem;
+    }
     .quote .para {
         font-size: 3rem;
     }
 
 
+    .contact {
+        margin: 2rem 5rem;
+    }
     .contact-slogan h1 {
         font-size: 4.7rem;
+    }
+}
+
+@media (width <= 1312px) {
+
+    header {
+        width: 55%;
+    }
+
+
+    .home {
+        gap: 2rem;
+    }
+
+
+    .quote {
+        margin: 8rem 5rem 10rem 8rem;
+    }
+
+
+    .personal-container {
+        gap: 7rem;
+    }
+
+
+    #class {
+        font-size: 8rem;
+        margin-top: 12rem;
+    }
+    #class1 {
+        font-size: 8rem;
+    }
+
+
+    .sold-yet-container {
+        width: 50rem;
+    }
+    .sold-yet p {
+        font-size: 1.8rem;
+    }
+
+
+    .contact {
+        margin: 5rem 5rem;
+    }
+    .contact-slogan h1 {
+        font-size: 4rem;
+    }
+    .contact-slogan h2 {
+        font-size: 3rem;
+    }
+}
+@media (width <= 1188px) {
+
+    header {
+        width: 75%;
+    }
+
+
+    .home {
+        gap: 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .home2 {
+        width: 20rem;
+    }
+
+
+    .quote {
+        margin: 5rem 5rem 10rem 5rem;
+    }
+    .quote .para {
+        font-size: 2.5rem;
+    }
+
+
+    .personal-container {
+        gap: 4rem;
+    }
+    .personal-photo img{
+        width: 20rem;
+    }
+    .my-photo::after {
+        top: 15px;
+        left: 15px;
+    }
+    .info {
+        width: 29rem;
+        gap: 0.3rem;
+    }
+    .info h4 {
+        margin-bottom: 0.5rem;
+    }
+    .info p {
+        font-size: 1.2rem;
+    }
+
+
+    .heading {
+        display: none;
+    }
+    .heading2 {
+        display: flex;
+    }
+    .heading2 .layer1 {
+        font-size: 6rem;
+        margin-left: -9rem;
+    }
+    .heading2 .layer2 {
+        font-size: 6rem;
+        margin-left: 15rem;
+        margin-bottom: 5rem;
+    }
+    .project-container {
+        gap: 1rem;
+    }
+
+
+    .sold-yet-container {
+        width: 50rem;
+    }
+    .sold-yet p {
+        font-size: 1.8rem;
+    }
+
+
+    .contact {
+        margin: 5rem 2rem;
+    }
+    .contact-slogan h1 {
+        font-size: 4rem;
+    }
+    .contact-slogan h2 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (width <= 900px) {
+
+    header {
+        display: none;
+    }
+    .nav2 {
+        display: flex;
+    }
+
+
+    .home {
+        gap: 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .home2 {
+        width: 20rem;
+    }
+
+
+    .quote {
+        margin: 5rem 1rem 10rem 1rem;
+    }
+    .quote .para {
+        font-size: 2.5rem;
+    }
+    .quote .sub-para {
+        font-size: 1.2rem;
+    }
+
+
+    .about-content h3 {
+        margin-top: 5rem;
+    }
+    .personal-container {
+        gap: 7rem;
+        flex-direction: column;
+    }
+    .personal-photo img{
+        width: 26rem;
+    }
+    .my-photo::after {
+        top: 25px;
+        left: 25px;
+    }
+    .info {
+        width: 39rem;
+        gap: 0.3rem;
+    }
+    .info h4 {
+        margin-bottom: 1.5rem;
+    }
+    .info p {
+        font-size: 1.8rem;
+    }
+
+
+    .heading {
+        display: none;
+    }
+    .heading2 {
+        display: flex;
+    }
+    .heading2 .layer1 {
+        font-size: 6rem;
+        margin-left: -9rem;
+    }
+    .heading2 .layer2 {
+        font-size: 6rem;
+        margin-left: 15rem;
+        margin-bottom: 5rem;
+    }
+    .project-container {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .project {
+        width: 35rem;
+        height: 40rem;
+    }
+    .project-show img {
+        width: 33rem;
+    }
+    .project-info h5 {
+        font-size: 2.7rem;
+    }
+    .project-info p {
+        font-size: 2rem;
+    }
+    .project-info a {
+        font-size: 1.2rem;
+    }
+
+
+    .sold-yet-container {
+        width: 40rem;
+    }
+    .sold-yet p {
+        font-size: 1.8rem;
+    }
+
+
+    .contact {
+        margin: 5rem 2rem;
+    }
+    .contact-slogan h1 {
+        font-size: 3.5rem;
+    }
+    .contact-slogan h2 {
+        font-size: 2.7rem;
     }
 }
