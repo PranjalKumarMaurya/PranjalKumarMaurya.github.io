@@ -14,24 +14,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
 </head>
 <body>
     <header>
-        <h4>Portfolio.</h4>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <a href="#about">
+            <i class="ph ph-user-circle"></i>
+            About Me
+        </a>
+        <a href="#projects">
+            <i class="ph ph-cards"></i>
+            Projects
+        </a>
+        <a href="#home">
+            <h3>PM</h3>
+        </a>
+        <a href="#skills">
+            <i class="ph ph-palette"></i>
+            Skills
+        </a>
+        <a href="#contact">
+            <i class="ph ph-chats"></i>
+            Contact
+        </a>
     </header>
 
     <section class="home" id="home">
         <div class="home1">
             <div class="home-content">
-                <h2>turning ideas into real life <span class="home-grad">products</span> is my calling</h2>
+                <h2>I am Pranjal Maurya, a <span class="home-grad">Developer.</span></h2>
+                <h4>Turning ideas into real life products is my calling.</h4>
             </div>
+            <div class="home-buttons">
+                <a href="" class="resume-button">Resume</a>
+                <a href="" class="letstalk-button">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home2">
+            <div class="json-animation" id="animation container"></div>
         </div>
     </section>
 
@@ -97,7 +118,9 @@
                 </div>
             </div>
             <div class="project">
-                <div class="project-show"></div>
+                <div class="project-show">
+                    <img src="./Pictures/Frame 12090.svg" alt="">
+                </div>
                 <div class="project-info">
                     <h5>Newbie</h5>
                     <p>An online learning place for people to learn new skills.</p>
@@ -202,6 +225,8 @@
         </div>
     </footer>
 
+
+    <script src="./JS/main.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script type="text/javascript">
