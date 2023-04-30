@@ -8,6 +8,7 @@
 
     <!-- Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,25 +20,25 @@
 </head>
 <body>
     <header>
-        <a href="#about">
-            <i class="ph ph-user-circle"></i>
-            About Me
-        </a>
-        <a href="#projects">
-            <i class="ph ph-cards"></i>
-            Projects
-        </a>
-        <a href="#home">
-            <h3>PM</h3>
-        </a>
-        <a href="#skills">
-            <i class="ph ph-palette"></i>
-            Skills
-        </a>
-        <a href="#contact">
-            <i class="ph ph-chats"></i>
-            Contact
-        </a>
+        <h4>PM</h4>
+        <nav>
+            <a href="#home">
+                <i class='bx bx-home'></i>
+                Home
+            </a>
+            <a href="#about">
+                <i class="ph ph-sparkle"></i>
+                About Me
+            </a>
+            <a href="#projects">
+                <i class="ph ph-cards"></i>
+                Projects
+            </a>
+            <a href="#contact">
+                <i class="ph ph-chats"></i>
+                Contact
+            </a>
+        </nav>
     </header>
 
     <section class="home" id="home">
@@ -94,19 +95,23 @@
         </div>
         <div class="project-container">
             <div class="project">
-                <div class="project-show"></div>
+                <div class="project-show">
+                    <img src="./Pictures/Default.svg" alt="">
+                </div>
                 <div class="project-info">
                     <h5>Techfeed</h5>
                     <p>A daily tech news platform and community.</p>
                     <a href="">
                         Source code 
                         <i class="ph ph-git-fork"></i>
-                    </a>
+                    </a> 
 
                 </div>
             </div>
             <div class="project">
-                <div class="project-show"></div>
+                <div class="project-show">
+                    <img src="./Pictures/Variant2.svg" alt="">
+                </div>
                 <div class="project-info">
                     <h5>Storm</h5>
                     <p>An android weather app with live updates.</p>
@@ -132,7 +137,9 @@
                 </div>
             </div>
             <div class="project">
-                <div class="project-show"></div>
+                <div class="project-show">
+                    <img src="./Pictures/Group 12440.svg" alt="">
+                </div>
                 <div class="project-info">
                     <h5>The Box</h5>
                     <p>An online cottage booking website.</p>
@@ -153,35 +160,7 @@
         </div>
     </section>
 
-    <section class="skills" id="skills">
-        <h4>This is what I am good at.</h4>
-        <div class="skills-container">
-            <div class="skill skill1">
-                <div class="skill-info">
-                    <h3>Development</h3> 
-                    <p>In building Websites and Java applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale.</p>
-                </div>
-                <div class="skill-img">
-                    <img src="./Svg/icons8-html-5.svg" alt="">
-                    <img src="./Svg/icons8-css3.svg" alt="">
-                    <img src="./Svg/icons8-javascript.svg" alt="">
-                    <img src="./Svg/icons8-react-native.svg" alt="">
-                    <img src="./Svg/icons8-java.svg" alt="">
-                </div>
-            </div>
-            <div class="skill skill2">
-                <div class="skill-info">
-                    <h3>Design</h3> 
-                    <p>I'm probably not the typical designer always positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me.</p>
-                </div>
-                <div class="skill-img">
-                    <img src="./Svg/icons8-adobe-dreamweaver.svg" alt="">
-                    <img src="./Svg/icons8-figma.svg" alt="">
-                    <img src="./Svg/icons8-adobe-indesign.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <section class="contact" id="contact">
         <div class="contact-left">
