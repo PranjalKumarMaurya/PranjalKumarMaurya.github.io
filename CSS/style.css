@@ -313,13 +313,15 @@ header a:nth-child(3) h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 3rem;
 }
 .heading {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     justify-content: center;
+    overflow-x: hidden;
 }
 .heading2 {
     display: none;
@@ -335,7 +337,7 @@ header a:nth-child(3) h3{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     top: 50%;
-    margin-top: 2rem;
+    margin-top: 10rem;
     transform: translateY(-50%);
     white-space: nowrap;
     font-size: 10rem;
@@ -357,6 +359,7 @@ header a:nth-child(3) h3{
     transform: translateY(-50%);
     color: whitesmoke;
     white-space: nowrap;
+    margin-top: 0rem;
     font-size: 10rem;
     font-weight: 400;
     left: 1000px;
