@@ -123,32 +123,8 @@ header a i {
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 25rem;
     gap: 10rem;
-}
-.photo-grads .grad1{
-    position: absolute;
-    width: 163.05px;
-    height: 492px;
-    background: #4391D9;
-    opacity: 0.2;
-    top: -7rem;
-    left: 5rem;
-    filter: blur(57px);
-    transform: rotate(-94.3deg);
-    z-index: -5;
-}
-.photo-grads .grad2{
-    position: absolute;
-    width: 246.01px;
-    height: 313.55px;
-    right: 0;
-    bottom: -6rem;
-    background: #4D5BCE;
-    opacity: 0.3;
-    filter: blur(47px);
-    transform: rotate(13.51deg);
-    z-index: -2;
 }
 .home1 {
     display: flex;
@@ -225,9 +201,8 @@ header a i {
     color: black;
 }
 
-.home2 {
-    width: 25rem;
-}
+
+
 
 /* ------------------- Home-Quote ------------------- */
 
@@ -263,7 +238,7 @@ header a i {
 }
 .about-content h3 {
     margin-top: 7rem;
-    color: whitesmoke;
+    color: #ccd6f6;
 }
 .about-content p {
     color: whitesmoke;
@@ -278,21 +253,25 @@ header a i {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12rem;
+    gap: 5rem;
 }
 .personal-photo {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
 }
 .personal-photo img{
-    width: 25rem;
-    border-radius: 1rem;
+    width: 20rem;
+    border-radius: 0.4rem;
 }
 .my-photo {
     transition: 500ms ease;
     display: block;
     position: relative;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     z-index: -2;
 }
 .my-photo::before {
@@ -304,32 +283,32 @@ header a i {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     transition: 500ms;
 }
 .my-photo::after {
-    border: 2px solid white;
-    top: 24px;
-    left: 24px;
+    border: 1.5px solid white;
+    top: 20px;
+    left: 20px;
     z-index: -1;
     content: "";
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     transition: 500ms;
 }
 
 .info {
     display: flex;
-    width: 37rem;
+    width: 45rem;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    width: 35rem;
+    width: 40rem;
     gap: 0.5rem;
     color: #5a5b5c;
 }
@@ -337,8 +316,9 @@ header a i {
     margin-bottom: 1rem;
 }
 .info p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.4rem;
+    color: #8892b0;
 }
 .info-grad1 {
     background: -webkit-linear-gradient(130.42deg, #FFCA9A 28%, #FB4444 146.51%);
@@ -349,6 +329,25 @@ header a i {
     background: linear-gradient(125.55deg, #2D46B9 -16.13%, #F037A5 113.84%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.info ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 5px 0px 0px;
+    list-style: none;
+    color: #8892b0;
+}
+.info ul ul {
+    margin-left: -5rem;
+}
+.info ul ul::before {
+    content: "▹";
+    position: relative;
+    left: 120px;
+    line-height: 20px;
 }
 
 
@@ -534,40 +533,11 @@ header a i {
 
 
 
-/* ------------------- sold-yet ------------------- */
-
-.sold-yet {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.sold-yet-container {
-    width: 65rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.sold-yet h4 {
-    background-image: linear-gradient(150.4deg, #81F5FF -19.3%, #FFD5E5 31%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    margin-top: 10rem;
-    font-size: 2.5rem;
-}
-.sold-yet p {
-    color: #c4c4c4;
-    font-size: 2.2rem;
-}
-
-
-
 
 /* ------------------- Contact ------------------- */
 
 .contact {
-    margin: 5rem 10rem;
+    margin: 2rem 15rem;
 }
 .contact-left {
     display: flex;
@@ -575,7 +545,7 @@ header a i {
     gap: 2rem;
 }
 .contact-slogan h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     line-height: 1.35;
     background-image : -webkit-linear-gradient(90deg, #f4d372, #d8572b);
     color: #dbdbdb;
@@ -587,11 +557,21 @@ header a i {
     transition: font-variation-settings 0.5s ease;
 }
 .contact-slogan h2 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 300;
     background: -webkit-linear-gradient(270deg, #f19aca, #4359ff);
     color: #dbdbdb;
-line-height: 1.35;
+    line-height: 1.35;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+.contact-slogan h3 {
+    font-size: 4rem;
+    font-weight: 300;
+    background: -webkit-linear-gradient(270deg, #f19aca, #4359ff);
+    color: #dbdbdb;
+    line-height: 1.35;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
@@ -610,6 +590,28 @@ line-height: 1.35;
 .contact-socials a {
     color: #5a5b5c;
     font-size: 3rem;
+    transition: 500ms ease;
+}
+.contact-socials a:nth-child(1):hover {
+     background: #f09433; 
+     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.contact-socials a:nth-child(2):hover {
+    color: #3b5998;
+}
+.contact-socials a:nth-child(3):hover {
+    color: #00acee;
+}
+.contact-socials a:nth-child(4):hover {
+    color: #0a66c2;
+}
+.contact-socials a:nth-child(5):hover {
+    color: white;
+}
+.contact-socials a:nth-child(6):hover {
+    color: #0088cc;
 }
 
 
@@ -635,16 +637,23 @@ footer .end p {
         width: 50%;
     }
 
+
+    .home {
+        margin-left: 15rem;
+    }
     .quote {
-        margin: 12rem 5rem 10rem 12rem;
+        margin: 15rem 8rem 4rem 10rem;
     }
     .quote .para {
         font-size: 3rem;
     }
 
+    .personal-info {
+        gap: 4rem;
+    }
 
     .contact {
-        margin: 2rem 5rem;
+        margin: 2rem 10rem;
     }
     .contact-slogan h1 {
         font-size: 4.7rem;
@@ -657,6 +666,9 @@ footer .end p {
         width: 55%;
     }
 
+    .page-socials {
+        display: none;
+    }
 
     .home {
         gap: 2rem;
@@ -1280,8 +1292,9 @@ footer .end p {
 }
 
 @media (max-width: 416px) {
-    .home-content {
-        width: 20rem;
+    .home {
+        justify-content: center;
+        margin-left: 2rem;
     }
     .home2 {
         display: none;
@@ -1293,6 +1306,10 @@ footer .end p {
         display: none;
     }
 
+    .personal-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .my-photo img {
         width: 19rem;
     }
@@ -1302,7 +1319,10 @@ footer .end p {
     }
 
     .info {
-        width: 20rem;
+        width: 22rem;
+    }
+    .info p {
+        font-size: 1rem;
     }
 
     .heading2 .layer1 {
@@ -1313,11 +1333,11 @@ footer .end p {
     }
 
     .project {
-        width: 22.5rem;
-        height: 27rem;
+        width: 24.5rem;
+        height: 30rem;
     }
     .project-show img {
-        width: 20rem;
+        width: 22rem;
     }
     .project-info h5 {
         font-size: 2.2rem;
@@ -1332,12 +1352,11 @@ footer .end p {
     .contact-slogan h2 {
         font-size: 1.5rem;
     }
+    .contact-slogan a h3 {
+        font-size: 3rem;
+    }
 
     .quote .para {
         margin-top: 5rem;
-    }
-    .sold-yet {
-        width: 100%;
-        padding: 1rem 1rem;
     }
 }
