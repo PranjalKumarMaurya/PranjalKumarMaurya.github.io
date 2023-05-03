@@ -546,7 +546,7 @@ footer .end p {
 
 
 
-@media (width <= 1586px) {
+@media (max-width: 1586px) {
     header {
         width: 50%;
     }
@@ -567,7 +567,7 @@ footer .end p {
     }
 }
 
-@media (width <= 1312px) {
+@media (max-width: 1312px) {
 
     header {
         width: 55%;
@@ -616,7 +616,7 @@ footer .end p {
         font-size: 3rem;
     }
 }
-@media (width <= 1188px) {
+@media (max-width: 1188px) {
 
     header {
         width: 75%;
@@ -703,7 +703,7 @@ footer .end p {
 }
 
 
-@media (width <= 900px) {
+@media (max-width: 900px) {
 
     header {
         display: none;
@@ -819,7 +819,7 @@ footer .end p {
         font-size: 2.7rem;
     }
 }
-@media (width <= 745px) {
+@media (max-width: 745px) {
     .nav2 {
         display: flex;
     }
@@ -941,7 +941,7 @@ footer .end p {
         margin-bottom: 5rem;
     }
 }
-@media (width <= 600px) {
+@media (max-width: 600px) {
     .nav2 {
         display: flex;
     }
@@ -1066,7 +1066,7 @@ footer .end p {
         margin-bottom: 5rem;
     }
 }
-@media (width <= 500px) {
+@media (max-width: 500px) {
     .nav2 {
         display: flex;
     }
@@ -1195,7 +1195,7 @@ footer .end p {
     }
 }
 
-@media (width <= 416px) {
+@media (max-width: 416px) {
     .home-content {
         width: 20rem;
     }
