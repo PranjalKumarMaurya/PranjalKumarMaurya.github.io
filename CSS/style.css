@@ -1284,7 +1284,7 @@ footer .end p {
         width: 20rem;
     }
     .home2 {
-        width: 15rem;
+        display: none;
     }
     .home-content h2 {
         font-size: 3.5rem;
