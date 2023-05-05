@@ -1333,7 +1333,7 @@ footer .end p {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 395px) {
     .home-content {
         width: 18rem;
     }
