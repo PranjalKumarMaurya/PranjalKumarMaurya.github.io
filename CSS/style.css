@@ -841,7 +841,10 @@ footer .end p {
     }
     .personal-container {
         gap: 7rem;
-        flex-direction: column;
+
+            display: flex;
+            flex-direction: column-reverse;
+        
     }
     .personal-photo img{
         width: 26rem;
@@ -1184,7 +1187,7 @@ footer .end p {
     }
     .personal-container {
         gap: 5rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .personal-photo img{
         width: 22rem;
