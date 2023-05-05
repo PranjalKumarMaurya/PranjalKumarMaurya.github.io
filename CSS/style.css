@@ -897,13 +897,6 @@ footer .end p {
     }
 
 
-    .sold-yet-container {
-        width: 40rem;
-    }
-    .sold-yet p {
-        font-size: 1.8rem;
-    }
-
 
     .contact {
         margin: 5rem 2rem;
@@ -1016,12 +1009,6 @@ footer .end p {
     }
 
 
-    .sold-yet-container {
-        width: 32rem;
-    }
-    .sold-yet p {
-        font-size: 1.8rem;
-    }
 
 
     .contact {
@@ -1112,7 +1099,7 @@ footer .end p {
     }
     .heading2 .layer2 {
         font-size: 4rem;
-        margin-left: 10rem;
+        margin-left: 5rem;
         margin-bottom: 5rem;
     }
     .project-container {
@@ -1138,15 +1125,7 @@ footer .end p {
     }
 
 
-    .sold-yet-container {
-        width: 25rem;
-    }
-    .sold-yet h4 {
-        font-size: 2rem;
-    }
-    .sold-yet p {
-        font-size: 1.3rem;
-    }
+
 
 
     .contact {
@@ -1183,9 +1162,7 @@ footer .end p {
     .home-content h4 {
         font-size: 1rem;
     }
-    .home2 {
-        width: 20rem;
-    }
+
 
 
     .quote {
@@ -1263,16 +1240,6 @@ footer .end p {
     }
 
 
-    .sold-yet-container {
-        width: 25rem;
-    }
-    .sold-yet h4 {
-        font-size: 2rem;
-    }
-    .sold-yet p {
-        font-size: 1.3rem;
-    }
-
 
     .contact {
         margin: 0rem 2rem;
@@ -1294,10 +1261,13 @@ footer .end p {
 @media (max-width: 416px) {
     .home {
         justify-content: center;
-        margin-left: 2rem;
+        margin-left: -1rem;
     }
     .home2 {
         display: none;
+    }
+    .home-content {
+        width: 20rem;
     }
     .home-content h2 {
         font-size: 3.5rem;
@@ -1340,7 +1310,7 @@ footer .end p {
         width: 22rem;
     }
     .project-info h5 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .project-info p {
         font-size: 1.2rem;
@@ -1358,5 +1328,36 @@ footer .end p {
 
     .quote .para {
         margin-top: 5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-content {
+        width: 18rem;
+    }
+    .home-content h2 {
+        font-size: 3rem;
+    }
+
+    .project {
+        width: 22rem;
+    }
+    .project-show img {
+        width: 20rem;
+    }
+    .projects .heading2 .layer1 {
+        font-size: 4rem;
+    }
+    .projects .heading2 .layer2 {
+        font-size: 4rem;
+    }
+
+
+    .quote {
+        width: 22rem;
+    }
+
+    .end {
+        width: 5rem;
     }
 }
