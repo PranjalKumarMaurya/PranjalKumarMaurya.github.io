@@ -120,10 +120,11 @@ header a i {
 
 .home {
     height: 100vh;
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 25rem;
+    justify-content: center;
+    /* margin-left: 25rem; */
     gap: 10rem;
 }
 .home1 {
@@ -135,6 +136,9 @@ header a i {
 .home-content {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     width: 50rem;
 }
 .home-content h3 {
@@ -172,13 +176,14 @@ header a i {
 
 .home-buttons {
     display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 .home-buttons a {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-size: 1.3rem;
-    transition: 500ms ease;
+    transition: 300ms ease;
 }
 .resume-button {
     background: whitesmoke;
@@ -186,8 +191,8 @@ header a i {
     box-shadow: 0.2rem 0.2rem 1rem 0.5rem black;
 }
 .resume-button:hover {
-    background: #10101a;
-    border: 1px solid whitesmoke;
+    background: linear-gradient(-45deg,#6bc5f8,#994ae8);
+    border: 1px solid black;
     color: whitesmoke;
     box-shadow: none;
 }
@@ -196,9 +201,9 @@ header a i {
     color: whitesmoke;
 }
 .letstalk-button:hover {
-    background: whitesmoke;
-    box-shadow: 0.2rem 0.2rem 1rem 0.5rem black;
-    color: black;
+    background: linear-gradient(#10101a, #10101a) padding-box,
+    linear-gradient(-45deg,#6bc5f8,#994ae8) border-box;
+    border: 1px solid transparent;
 }
 
 
@@ -638,9 +643,7 @@ footer .end p {
     }
 
 
-    .home {
-        margin-left: 15rem;
-    }
+    
     .quote {
         margin: 15rem 8rem 4rem 10rem;
     }
@@ -1261,7 +1264,6 @@ footer .end p {
 @media (max-width: 416px) {
     .home {
         justify-content: center;
-        margin-left: -1rem;
     }
     .home2 {
         display: none;
