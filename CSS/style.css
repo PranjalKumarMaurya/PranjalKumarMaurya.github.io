@@ -8,6 +8,8 @@
 body {
     font-family: 'Figtree', sans-serif;
     background: #10101a;
+    
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 html {
     scroll-behavior: smooth;
@@ -126,6 +128,7 @@ header a i {
     justify-content: center;
     /* margin-left: 25rem; */
     gap: 10rem;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
 .home1 {
     display: flex;
