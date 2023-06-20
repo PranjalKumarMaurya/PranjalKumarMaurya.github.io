@@ -567,19 +567,42 @@ header a i {
     padding: 1rem;
     border-radius: 0.5rem;
     display: flex;
+    width: 20rem;
+    height: 23rem;
     flex-direction: column;
-    gap: 0.4rem;
-    color: white;
+    justify-content: space-between;
+    color: #8892b0;
+    transition: 400ms ease;;
 }
-.OP-card>a {
+.OP-card .top-layer>a {
     text-decoration: none;
     color: #ccd6f6;
+    font-size: 1.2rem;
 }
 .OP-card:nth-child(1) h5 {
     color: #0ba95b;
 }
 .OP-card:nth-child(2) h5 {
     color: #12b5e5;
+}
+.OP-card .top-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+}
+.OP-card .OP-info p {
+    font-size: 1.5rem;
+}
+.OP-info {
+    /* margin-top: -7rem; */
+}
+.OP-card .bottom-layer {
+    display: flex;
+    gap: 0.4rem;
+}
+.OP-card .bottom-layer p {
+    font-size: 0.8rem;
 }
 
 
