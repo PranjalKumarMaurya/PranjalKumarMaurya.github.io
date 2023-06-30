@@ -533,10 +533,24 @@ header a i {
 .project-info a {
     color: whitesmoke;
     transition: 500ms ease;
-    margin-bottom: -0.6rem;
 }
 .project-info a:hover {
     font-size: 1.2rem;
+}
+.project-info .bottom-layer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.bottom-layer .tech-stack {
+    display: flex;
+    gap: 0.7rem;
+}
+.tech-stack p {
+    display: flex;
+    font-size: 1rem;
+    margin-top: 0;
 }
 
 /* ------------------- Other Projects ------------------- */
@@ -567,7 +581,7 @@ header a i {
     padding: 1rem;
     border-radius: 0.5rem;
     display: flex;
-    width: 20rem;
+    width: 22rem;
     height: 23rem;
     flex-direction: column;
     justify-content: space-between;
@@ -582,8 +596,11 @@ header a i {
 .OP-card:nth-child(1) h5 {
     color: #0ba95b;
 }
-.OP-card:nth-child(2) h5 {
+.OP-card:nth-child(3) h5 {
     color: #12b5e5;
+}
+.OP-card:nth-child(2) h5 {
+    color: #fcba28;
 }
 .OP-card .top-layer {
     display: flex;

@@ -1,19 +1,19 @@
 <svg width="352" height="256" viewBox="0 0 352 256" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_201_1661)">
 <rect width="352" height="256" fill="url(#paint0_linear_201_1661)"/>
-<rect x="50" y="32" width="184" height="309" rx="3" fill="url(#pattern0)"/>
+<rect x="84" y="30" width="184" height="309" rx="3" fill="url(#pattern0)"/>
 <g filter="url(#filter0_d_201_1661)">
-<rect x="206" y="179" width="137" height="42" rx="3" fill="url(#pattern1)" shape-rendering="crispEdges"/>
+<rect x="246" y="47" width="99" height="42" rx="3" fill="url(#pattern1)" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter1_d_201_1661)">
-<rect x="217" y="46" width="95" height="47" rx="3" fill="url(#pattern2)" shape-rendering="crispEdges"/>
+<rect x="8" y="147" width="95" height="47" rx="3" fill="url(#pattern2)" shape-rendering="crispEdges"/>
 </g>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_201_1661" transform="scale(0.00052089 0.000310174)"/>
 </pattern>
-<filter id="filter0_d_201_1661" x="206" y="179" width="146" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_201_1661" x="246" y="47" width="108" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="5" dy="4"/>
@@ -24,9 +24,9 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_201_1661" result="shape"/>
 </filter>
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image1_201_1661" transform="matrix(0.000783699 0 0 0.00255635 0 -0.00487946)"/>
+<use xlink:href="#image1_201_1661" transform="matrix(0.00107403 0 0 0.00253165 -0.185232 0)"/>
 </pattern>
-<filter id="filter1_d_201_1661" x="217" y="46" width="104" height="55" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_201_1661" x="8" y="147" width="104" height="55" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="5" dy="4"/>
